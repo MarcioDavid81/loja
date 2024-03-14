@@ -84,14 +84,37 @@ nav{
     top: 0;
 }
 nav ul li{
-    display: inline;
+    display: inline-block;
     padding: 10px;
 }
-nav ul li:hover{
+nav li:hover{
     background-color: var(--cor0);
     border-top-left-radius: 10px;
     color: var(--cor1);
     cursor: pointer;
+}
+nav li a:hover{
+    background-color: var(--cor0);
+    border-top-left-radius: 10px;
+    color: var(--cor1);
+    cursor: pointer;
+}
+nav li a{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+}
+.dropdown-menu{
+    position: absolute;
+    display: none;
+    padding: 10px;
+    font-size: 12px;
+}
+.dropdown-menu a{
+    display: block;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
 }
 section.fundo{
     display: flex;
