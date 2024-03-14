@@ -76,8 +76,12 @@ main input{
 }
 nav{
     display: flex;
+    align-items: center;
+    justify-content: end;
     padding: 10px;
     background-color: var(--cor1);
+    position: sticky;
+    top: 0;
 }
 nav ul li{
     display: inline;
